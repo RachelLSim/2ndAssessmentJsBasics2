@@ -170,6 +170,8 @@ console.log(foodArr)
 //CODE HERE
 
 
+// category: 'Pasta'
+
 
 
 // const filteredFood = foodArr.filter(/* CALLBACK HERE */)
