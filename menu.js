@@ -32,6 +32,16 @@
 
 //CODE HERE
 
+const pizza = {
+    name: 'Caprese',
+    price: 8.00,
+    category: 'Italian',
+    popularity: 6,
+    rating: 4,
+    tags: ['zesty', 'balsalmic', 'thin crust', 'white sauce']
+
+}
+
 
 
 //////////////////PROBLEM 2////////////////////
@@ -41,6 +51,8 @@
     First, log the popularity of pizza. 
     Use dot notation to access the value.
 */
+
+console.log(pizza.popularity)
 
 //CODE HERE
 
@@ -54,6 +66,8 @@
 
 //CODE HERE
 
+console.log(pizza.tags[1])
+
 
 /*
     Third, destructure the price off of the
@@ -64,6 +78,8 @@
 
 //CODE HERE
 
+const {price: capresePrice} = pizza
+console.log(capresePrice)
 
 /*
     Fourth, and last, destructure the category
@@ -73,7 +89,8 @@
 */
 
 //CODE HERE
-
+const {category: capreseCat} = pizza
+console.log(capreseCat)
 
 //////////////////PROBLEM 3////////////////////
 /* 
@@ -90,6 +107,22 @@
 //CODE HERE
 
 
+const foodArr = [
+    const spaghetti = {
+        price: 7.50,
+        category: 'Italian',
+        popularity: 8,
+        rating: 4,
+        tags: ['pasta', 'savory', 'traditional', 'home made']
+
+},
+
+
+
+
+
+
+]
 
 //////////////////PROBLEM 4////////////////////
 /* 

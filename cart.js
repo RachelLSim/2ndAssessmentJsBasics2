@@ -35,6 +35,9 @@ const cart = [
 
 //CODE HERE
 
+const summedPrice = cart.reduce((acc, curr) => 0, )
+
+
 // const summedPrice = cart.reduce(/* CALLBACK HERE */)
 
 

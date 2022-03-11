@@ -22,10 +22,13 @@
 */
 
 //CODE HERE
+const greetUser = (username) => {
+    return `'Welcome back, ' ${username}.`;
+};
 
+console.log(greetUser('Rachel'))
 
-
-
+//I dont't understand why this isn't working.
 
 //////////////////PROBLEM 2////////////////////
 /* 
@@ -52,6 +55,14 @@ const deliveryAreaZipCodes = [85205, 85204, 85203, 85213, 85206]
 //CODE HERE
 
 
+// const canWeDeliver (userZip, deliveryAreaZipCodes) => {
+//     for (let i = -; i < deliveryAreaZipCodes.length, i++);{
+//     deliveryAreaZipCodes[i] += 1 }
+//     if userZip = [i]{
+//         console.log(`You're in our delivery zone!`)
+//     } else
+//     console.log(`Sorry, we can't deliver to that address.`)
+// }
 
 /* 
     Problem 2 Continued
