@@ -108,22 +108,53 @@ console.log(capreseCat)
 
 
 const foodArr = [
-    const spaghetti = {
+    spaghetti = {
+        name: 'Luca`s Spaghetti',
         price: 7.50,
-        category: 'Italian',
+        category: 'pasta',
         popularity: 8,
         rating: 4,
         tags: ['pasta', 'savory', 'traditional', 'home made']
 
 },
+    pastaCarbonera = {
+        name: 'Pasta Carbonera',
+        price: 13.50,
+        category: 'Pasta',
+        popularity: 3,
+        rating: 5,
+        tags: ['pasta', 'savory', 'traditional', 'spicy']
 
+},
+    ceasarSalad = {
+        name: 'Ceasar Salad',
+        category: 'Salad',
+        popularity: 10,
+        rating: 4,
+        tags: ['salad', 'fresh', 'healthy']
 
+    },
+    creamOfMushroomSoup = {
+        name: 'Cream of Mushroom Soup',
+        price: 4.00,
+        category: 'Soup',
+        popularity: 12,
+        rating: 3,
+        tags: ['soup', 'savory', 'side', 'starter']
 
+    },  
+    pepperoni = {
+        name: 'Pepperoni Pizza',
+        price: 8.50,
+        category: 'Pizza',
+        popularity: 4,
+        rating: 5,
+        tags: ['pizza', 'savory', 'Luca Favorite', 'home made']
 
-
-
+}
 ]
 
+console.log(foodArr)
 //////////////////PROBLEM 4////////////////////
 /* 
     Let's filter the food objects according
@@ -137,6 +168,9 @@ const foodArr = [
 */
 
 //CODE HERE
+
+
+
 
 // const filteredFood = foodArr.filter(/* CALLBACK HERE */)
 
