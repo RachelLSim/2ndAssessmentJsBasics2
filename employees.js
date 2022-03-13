@@ -49,7 +49,7 @@ let empOne = new Employee('Jess', "weekday mornings, weekday afternoons")
     `empOne` object.
 */
 
-//CODE HERE
+//CODE HERE                                                                                                                            
 
 empOne.getSchedule()
 
@@ -66,9 +66,13 @@ empOne.getSchedule()
 */
 
 //CODE HERE
+let empTwo = {...empOne}
+console.log(empTwo)
 
+empTwo.name = "Nick"
+console.log(empTwo)
 
-//Couldn't find spread operator in my notes, //
+//Couldn't find spread operator in my notes, MDM Docs spread syntax //
 
 
 
@@ -100,12 +104,12 @@ empOne.getSchedule()
 //CODE HERE
 
 class Manager extends Employee {
-    constructor(name, shifts, [employees]){
+    constructor(name, shifts, employees){
         super(name, shifts)
         this.employees = employees;
     }
     getEmployees(){
-        console.log(this.employees);
+        console.log(`${this.name} manages ${this.employees}`);
     }
     addEmployee (emp) {
         this.employees.push(emp)
@@ -125,17 +129,18 @@ class Manager extends Employee {
 
 //CODE HERE
 
-let manager = new Manager('Winston', 'weekday mornings, weekday afternoons', ['Cece', 'Schmidt'])
+let manager = new Manager('Winston', 'weekday mornings, weekday afternoons', 'Cece', 'Schmidt')
+
 
 
 /*
     Call the `getEmployees` method on the
     `manager` object.  
 */
-getEmployees(manager)
 
 //CODE HERE
 
+manager.getEmployees
 
 
 /*

@@ -23,7 +23,7 @@
 
 //CODE HERE
 const greetUser = (username) => {
-    return `'Welcome back, ' ${username}.`;
+    return `Welcome back, ${username}.`;
 };
 
 console.log(greetUser('Rachel'))
@@ -55,15 +55,16 @@ const deliveryAreaZipCodes = [85205, 85204, 85203, 85213, 85206]
 //CODE HERE
 
 
-// const canWeDeliver (userZip, deliveryAreaZipCodes) => {
-//     for (let i = -; i < deliveryAreaZipCodes.length, i++);{
-//     deliveryAreaZipCodes[i] += 1 }
-//     if userZip = [i]{
-//         console.log(`You're in our delivery zone!`)
-//     } else
-//     console.log(`Sorry, we can't deliver to that address.`)
-// }
+const canWeDeliver = (userZip) => {
+    for (let i = 0; i < deliveryAreaZipCodes.length; i++){
+        if(deliveryAreaZipCodes[i] === userZip) {
+            return console.log(`You're in our delivery zone!`)
+        } else {
+        return console.log(`Sorry, we can't deliver to that address.`)
+    }}
+}
 
+canWeDeliver(85203)
 /* 
     Problem 2 Continued
 
@@ -83,6 +84,15 @@ const deliveryAreaZipCodes = [85205, 85204, 85203, 85213, 85206]
 
 // CODE HERE
 
+canWeDeliver2 = (userZip) => {
+    if(deliveryAreaZipCodes.includes(userZip)){
+        return console.log("You're in our delivery zone!")
+    } else{
+        return console.log("Sorry, we can't deliver to that addrss")
+    }
+}
+
+canWeDeliver()
 
 //////////////////PROBLEM 3////////////////////
 /* 
@@ -107,6 +117,8 @@ const deals = [
         desc: '   This deal lasts until the end of March! '
     }
 ]
+
+deals[0].title
 
 /*
     The owner has decided to take the 15% off

@@ -39,48 +39,29 @@ const pizza = {
     popularity: 6,
     rating: 4,
     tags: ['zesty', 'balsalmic', 'thin crust', 'white sauce']
-
 }
-
-
-
 //////////////////PROBLEM 2////////////////////
-/* 
-    Let's print a few values from our pizza object.
-
+/*  Let's print a few values from our pizza object.
     First, log the popularity of pizza. 
     Use dot notation to access the value.
 */
-
 console.log(pizza.popularity)
 
 //CODE HERE
-
-
 /*
-    Second, log the second tag in your pizza's
-    tags array.
-    Use a combination of dots and brackets to
-    get the value.
+Second, log the second tag in your pizza's tags array. Use a combination of dots and brackets to get the value.
 */
-
 //CODE HERE
 
 console.log(pizza.tags[1])
 
-
 /*
-    Third, destructure the price off of the
-    pizza object.
-    
+    Third, destructure the price off of thepizza object.
     Print the value of your new price variable.
-*/
-
+*/ 
 //CODE HERE
-
 const {price: capresePrice} = pizza
 console.log(capresePrice)
-
 /*
     Fourth, and last, destructure the category
     property.
@@ -168,7 +149,7 @@ console.log(foodArr)
 */
 
 //CODE HERE
-
+                                                                                                  
 
 // category: 'Pasta'
 

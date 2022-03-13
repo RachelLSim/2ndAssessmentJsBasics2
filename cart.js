@@ -10,12 +10,9 @@
 
 //////////////////PROBLEM 1////////////////////
 /*  
-    Below is a cart array that has food objects
-    inside. 
+    Below is a cart array that has food objects inside. 
 
-    Write a callback below that uses the reduce
-    array method to calculate the sum of all
-    the food. 
+    Write a callback below that uses the reduce array method to calculate the sum of all the food. 
 */
 
 const cart = [
@@ -32,13 +29,16 @@ const cart = [
         price: 7.99
     }
 ]
-
 //CODE HERE
 
-const summedPrice = cart.reduce((acc, curr) => 0, )
+function myFunc(accumulator, currentObject) {
+    return accumulator + currentObject.price;
+}
 
+initialValue = 0;
+const summedPrice = cart.reduce(myFunc, initialValue);
 
-// const summedPrice = cart.reduce(/* CALLBACK HERE */)
+console.log(summedPrice)
 
 
 //////////////////PROBLEM 2////////////////////
@@ -58,7 +58,10 @@ const summedPrice = cart.reduce((acc, curr) => 0, )
 
 //CODE HERE
 
-
+function calcFinalPrice(cartTotal, couponValue, tax) {
+    return cartTotal * (1 + tax) - couponValue 
+}
+console.log(calcFinalPrice(summedPrice, 5.00, .06))
 
 //////////////////PROBLEM 3////////////////////
 /*  
@@ -83,6 +86,9 @@ const summedPrice = cart.reduce((acc, curr) => 0, )
 /*
     TEXT ANSWER HERE
 
+First Name and Last Name, phone number, reservation date and time, group size
+We need to know when they want to come, what the table size needed will be, what time they'll be there and how to contact them
+First and Last name = strings, phone number - string (due to needing dashes), reservation date and time - strings, group size - integer (so it can be updated or changed)
 */
 
 /*
@@ -91,3 +97,13 @@ const summedPrice = cart.reduce((acc, curr) => 0, )
 */
 
 //CODE HERE
+
+const customer ={
+    firstName: "Zack",
+    lastName: "Battenfield",
+    phoneNumber: "801-555-9555",
+    reservationDate: "3/12/2022",
+    time: "6:00 pm",
+    groupSize: 2
+    }
+
