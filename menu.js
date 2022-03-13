@@ -164,13 +164,11 @@ const filteredFood = foodArr.filter(tagFinder);
     food that has above a certain rating, 
     below a certain price, or any other combo.
 
-    Write a function called `filterByProperty`
-    that takes in three arguments: `property`, `number`, and `type. 
+    Write a function called `filterByProperty` that takes in three arguments: `property`, `number`, and `type. 
 
     The property will be a string (rating, popularity, or price)
 
-    The number will be the number that you want
-    to compare against 
+    The number will be the number that you want to compare against 
 
     The type should be 'above' or 'below' to 
     indicate whether you want to get foods with
@@ -194,6 +192,26 @@ const filteredFood = foodArr.filter(tagFinder);
 */
 
 //CODE HERE
+
+function above(type, above){
+    if (type === above){
+        return true
+    }
+}
+function below(type, below){
+    if (type === below){
+        return true
+    }
+}
+
+function somethingOrOther()
+
+function filterByProperty(property, number, type) {
+    return foodArr.filter(somethingOrOther);
+}
+
+//const superFilteredFood = filterByProperty();
+
 
 
 /*
