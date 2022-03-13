@@ -121,15 +121,15 @@ const deals = [
 deals[0].title
 
 /*
-    The owner has decided to take the 15% off
-    deal down to 10%.
+    The owner has decided to take the 15% off deal down to 10%.
 
-    Reassign the value of the first deal's title
-    to be itself, but use the `replace` method
-    to replace the 15 with a 10.
+    Reassign the value of the first deal's title to be itself, but use the `replace` method to replace the 15 with a 10.
 */
 
 //CODE HERE
+var something = deals[0].title.replace('15', '10')
+
+console.log(something)
 
 
 
@@ -147,3 +147,6 @@ deals[0].title
 */
 
 //CODE HERE
+
+var somethingElse = deals[1].desc.replace('March', 'April').trim()
+console.log(somethingElse)

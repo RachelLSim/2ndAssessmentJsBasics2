@@ -45,7 +45,7 @@ const pizza = {
     First, log the popularity of pizza. 
     Use dot notation to access the value.
 */
-console.log(pizza.popularity)
+// console.log(pizza.popularity)
 
 //CODE HERE
 /*
@@ -53,7 +53,7 @@ Second, log the second tag in your pizza's tags array. Use a combination of dots
 */
 //CODE HERE
 
-console.log(pizza.tags[1])
+// console.log(pizza.tags[1])
 
 /*
     Third, destructure the price off of thepizza object.
@@ -61,7 +61,7 @@ console.log(pizza.tags[1])
 */ 
 //CODE HERE
 const {price: capresePrice} = pizza
-console.log(capresePrice)
+// console.log(capresePrice)
 /*
     Fourth, and last, destructure the category
     property.
@@ -71,7 +71,7 @@ console.log(capresePrice)
 
 //CODE HERE
 const {category: capreseCat} = pizza
-console.log(capreseCat)
+// console.log(capreseCat)
 
 //////////////////PROBLEM 3////////////////////
 /* 
@@ -135,7 +135,7 @@ const foodArr = [
 }
 ]
 
-console.log(foodArr)
+// console.log(foodArr)
 //////////////////PROBLEM 4////////////////////
 /* 
     Let's filter the food objects according
@@ -149,30 +149,25 @@ console.log(foodArr)
 */
 
 //CODE HERE
-                                                                                                  
 
-// category: 'Pasta'
+function tagFinder(currentFood){
+    return currentFood.tags.includes('pasta');
+}
+const filteredFood = foodArr.filter(tagFinder);
 
-
-
-// const filteredFood = foodArr.filter(/* CALLBACK HERE */)
-
-
+// console.log(filteredFood);
 
 //////////////////PROBLEM 5////////////////////
 /* 
-    Now let's write a function that's a little
-    more flexible than just filtering for one
+    Now let's write a function that's a little more flexible than just filtering for one
     value. We want to be able to filter for 
     food that has above a certain rating, 
     below a certain price, or any other combo.
 
     Write a function called `filterByProperty`
-    that takes in three arguments: `property`, 
-    `number`, and `type. 
+    that takes in three arguments: `property`, `number`, and `type. 
 
-    The property will be a string (rating,
-    popularity, or price)
+    The property will be a string (rating, popularity, or price)
 
     The number will be the number that you want
     to compare against 
